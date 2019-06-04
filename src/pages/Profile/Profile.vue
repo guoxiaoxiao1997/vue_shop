@@ -1,14 +1,9 @@
 <template>
   <div>
     <section class="profile">
-<!--      <header class="header">-->
-<!--        <a class="header_title">-->
-<!--          <span class="header_title_text">我的</span>-->
-<!--        </a>-->
-<!--      </header>-->
       <HeaderTop title="订单列表"></HeaderTop>
       <section class="profile-number">
-        <a href="javascript:" class="profile-link">
+        <router-link to="/login" class="profile-link">
           <div class="profile_image">
             <i class="iconfont icon-person"></i>
           </div>
@@ -22,9 +17,12 @@
             </p>
           </div>
           <span class="arrow">
-              <i class="iconfont icon-jiantou1"></i>
-            </span>
-        </a>
+            <i class="iconfont icon-jiantou1"></i>
+          </span>
+        </router-link>
+<!--        <a href="javascript:" >-->
+
+<!--        </a>-->
       </section>
       <section class="profile_info_data border-1px">
         <ul class="info_data_list">
@@ -107,6 +105,7 @@ export default {
 </script>
 <style lang="stylus" rel="stylesheet/stylus">
   .profile //我的
+    overflow hidden
     width 100%
     .profile-number
       margin-top 45.5px
@@ -127,7 +126,6 @@ export default {
             background #e4e4e4
             font-size 62px
         .user-info
-          float left
           margin-top 8px
           margin-left 15px
           p
