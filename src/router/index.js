@@ -13,8 +13,12 @@ Vue.use(VueRouter)
 export default new VueRouter({
   routes: [
     {
-      path: '/MSite',
-      component: MSite
+      path: '/',
+      redirect: '/msite'
+    },
+    {
+      path: '/msite',
+      component: MSite,
     },
     {
       path: '/Order',

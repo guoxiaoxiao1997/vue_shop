@@ -258,7 +258,7 @@
                   .star-item
                     display inline-block
                     background-repeat no-repeat
-                  &.star-48
+                  &.star-24
                     .star-item
                       width 20px
                       height 20px
@@ -267,7 +267,7 @@
                       &:last-child
                         margin-right: 0
                       &.on
-                        bg-image('./images/stars/star48_on')
+                        bg-image("./images/stars/star48_on")
                       &.half
                         bg-image('./images/stars/star48_half')
                       &.off
